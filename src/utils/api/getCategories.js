@@ -1,8 +1,6 @@
+import apiHelper from "./apiHelper"
 const getCategories = async() => {
-//   let resp =  await fetch(`${API_URL}/categories`)
-//   let data = await resp.json()
-//   return data.categories
-
+  // return apiHelper('/api/categories', 'GET')
   const fake_response ={
     "status": "success",
     "categories": [

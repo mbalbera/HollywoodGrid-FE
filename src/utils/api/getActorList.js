@@ -1,21 +1,9 @@
+import apiHelper from "./apiHelper"
 const getActorList = async(string) => {
     // const body = {
     //     string
     // }
-    // const resp = await fetch(`${API_URL}/get_actor`,{
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify({body})
-    // })
-    // const data = resp.json()
-    // if (data.status === 'success'){
-    //     return {status:'success', result: data.result}
-    // }
-    // else{
-    //     return {status:data.status}
-    // }
+   return apiHelper('/api/actor-list', 'POST', {string})
     const fake_response = {
         "status": "success",
         "result": [
