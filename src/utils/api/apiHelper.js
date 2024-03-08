@@ -6,10 +6,7 @@ export default async function apiHelper(url, method, body, protectedRoute=false)
     }
     let response = await fetch(url, {
         method: method,
-        headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${localStorage.getItem('token')}`
-        },
+        headers,
         body: JSON.stringify(body)
     })
     if (response.ok) {
