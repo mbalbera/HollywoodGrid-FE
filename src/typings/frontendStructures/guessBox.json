@@ -1,0 +1,5 @@
+{
+    "filled": "boolean",
+    "actor": "Actor",
+    "incorrectGuesses": "Array<Actor>"
+}

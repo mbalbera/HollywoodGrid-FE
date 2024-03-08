@@ -1,0 +1,51 @@
+{
+    "status": "success",
+    "categories": [
+      {
+        "movie_id": -1,
+        "title": "Movies",
+        "imgUrl":"",
+        "type": "movie | tv"
+      },
+      {
+        "movie_id": 0,
+        "title": "The Godfather",
+        "imgUrl":"",
+        "type": "movie | tv"
+      },
+      {
+        "movie_id": 1,
+        "title": "A Few Good Men",
+        "imgUrl":"",
+        "type": "movie | tv"
+
+      },
+      {
+        "movie_id": 2,
+        "title": "Iron Man",
+        "imgUrl":"",
+        "type": "movie | tv"
+
+      },
+      {
+        "movie_id": 3,
+        "title": "The Last Castle",
+        "imgUrl":"",
+        "type": "movie | tv"
+
+      },
+      {
+        "movie_id": 4,
+        "title": "Shrek",
+        "imgUrl":"",
+        "type": "movie | tv"
+
+      },
+      {
+        "movie_id": 5,
+        "title": "The Lion King",
+        "imgUrl":"",
+        "type": "movie | tv"
+      }
+     ]
+  }

@@ -1,0 +1,6 @@
+{
+    "type":"string literal 'movie' or 'tv'",
+    "title":"string",
+    "imgUrl":"string",
+    "id":"number"
+}
