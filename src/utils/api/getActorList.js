@@ -3,7 +3,7 @@ const getActorList = async(string) => {
     // const body = {
     //     string
     // }
-//    return apiHelper('/api/actor-list', 'POST', {string})
+    // return apiHelper('/api/actor-list', 'POST', {string})
     const fake_response = {
         "status": "success",
         "result": [
