@@ -4,8 +4,6 @@ export default function SummaryGrid({accuracyArray}) {
         gridTemplateColumns: 'repeat(3, 1fr)',
       }
 
-    
-      
     function renderBox(backgroundColor) {
         return (
             <div 
