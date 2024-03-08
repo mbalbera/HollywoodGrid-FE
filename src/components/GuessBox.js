@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GuessBox = ({selectBox, actor}) => {
+const GuessBox = ({selectBox, actorBox}) => {
 
     const boxStyle = {
       display: 'flex',
@@ -14,10 +14,10 @@ const GuessBox = ({selectBox, actor}) => {
       marginBotton: '10px'
     }
 
-    if(actor?.filled){
+    if(actorBox?.actor?.id){
       return (
         <div style={boxStyle}>
-          <img src={actor.actor.image} alt={actor.actor.name}/>
+          <img src={actorBox.actor.imgUrl} alt={actorBox.actor.name}/>
         </div>
       );
     }

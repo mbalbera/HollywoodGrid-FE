@@ -28,7 +28,7 @@ export default function Home() {
   const fillActors = () => {
     let actors = []
     for(let i = 0; i < 9; i++){
-      actors.push({filled: false, actor: {}, incorrectGuesses: []})
+      actors.push({actor: {}, incorrectGuesses: []})
     }
     setActors(actors)
   }
@@ -37,21 +37,20 @@ export default function Home() {
     setTotalGuesses(totalGuesses + 1)
     const answer = await checkAnswer(actorId)
     if (answer.guessStatus === 'correct') {
-      let newActors = actors.map((actor, idx) => {
+      let newActors = actors.map((actorBox, idx) => {
         if (idx === selectedBox) {
-          actor.filled = true
-          actor.actor = answer.actor
+          actorBox.actor = answer.actor
         }
-        return actor
+        return actorBox
       })
       setActors(newActors)
     }
     else {
-      let newActors = actors.map((actor, idx) => {
+      let newActors = actors.map((actorBox, idx) => {
         if (idx === selectedBox) {
-          actor.incorrectGuesses.push(actorId)
+          actorBox.incorrectGuesses.push(actorId)
         }
-        return actor
+        return actorBox
       })
       setActors(newActors)
     }
