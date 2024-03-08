@@ -6,14 +6,14 @@ export default function SummaryGrid({accuracyArray}) {
 
     
       
-    function renderBox(color) {
+    function renderBox(backgroundColor) {
         return (
             <div 
                 style={{
                     border: '1px solid black', 
                     height: 100, 
                     width: 100, 
-                    backgroundColor: color
+                    backgroundColor
                 }}
             />
         )
